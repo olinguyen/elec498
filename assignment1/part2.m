@@ -12,7 +12,10 @@ r_b_swapped_img = img;
 r_b_swapped_img(:, : ,3) = img(:, :, 1);
 r_b_swapped_img(:, :, 1) = blue;
 % 4)
-imshow(imrotate(img, 90));
+%imshow(imrotate(img, 90));
+C(:,:,1)=rot90(img(:,:,1),1);
+C(:,:,2)=rot90(img(:,:,2),1);
+C(:,:,3)=rot90(img(:,:,3),1);
 % 5)
 A = reshape(1:300, 10, 10, 3);
 A_2d = reshape(A, 100, 3);
