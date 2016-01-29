@@ -8,4 +8,7 @@ odd_columns_even_rows = column_wise(2:2:end, 1:2:end);
 % 4)
 greater_than_50 = (column_wise > 50);
 % 5)
-XYZ = linsolve([1 1 1; 2 1 0; 0 1 1], [2; 3; 5]);
+%XYZ = linsolve([1 1 1; 2 1 0; 0 1 1], [2; 3; 5]);
+b =[2;3;5];
+A = [1 1 1; 2 1 0; 0 1 1];
+x = inv(A) * b;
